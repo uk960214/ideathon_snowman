@@ -1,0 +1,113 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    background: url("./images/background/glacier.jpg") no-repeat center center/cover;
+    height: 100vh;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+aside {
+    margin: 2rem 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1rem 0.5rem;
+    height: 90vh;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.profile #my-snowman {
+    width: 40%;
+    margin: auto;
+}
+
+.recent-activity {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.recent-activity h2 {
+    padding: 1rem;
+    border-bottom: solid #000 2px;
+}
+
+.recent-activity .hobby {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem 0;
+    align-items: center;
+}
+
+.recent-activity .hobby img {
+    width: 40%;
+}
+
+.recent-activity .hobby .activity {
+    margin: 0 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+main {
+    width: 70%;
+    margin: 2rem;
+}
+
+.page-title {
+    display: flex;
+    border-bottom: #000 solid 2px;
+    padding-inline-start: 0;
+}
+
+
+.content-area {
+    display: grid;
+    grid-template-columns: repeat(4, 12rem);
+    grid-template-rows: repeat(3, 12rem);
+    grid-gap: 2rem;
+    padding: 2rem;
+    height: 70%;
+}
+
+.friend-display {
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    padding: 1.5rem;
+}
+
+.friend-display img {
+    height: 80%;
+    margin: auto;
+}
+
+.level {
+    font-size: 1.3rem;
+}
