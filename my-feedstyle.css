@@ -71,11 +71,6 @@ body {
     color: #404865;
 }
 
-.nav-items .current {
-    font-weight: 800;
-    font-size: 1.6rem;
-}
-
 .search-bar {
     display: flex;
     height: 2.5rem;
@@ -218,29 +213,22 @@ main {
 .content-area {
     width: 950px;
     height: 850px;
+    background-color: #F5F5F7;
 }
 
-.content-area section{
-    background-color:#F5F5F7;
-    float: left;
-    width: 900px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
 
 .content-area article{
     float: left;
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
     margin: 10px;
     background-color: #F5F5F7;
 }
 .content-area img{
-    width:230px;
-    height: 230px;
+    width: 280px;
+    height: 280px;
     margin: 15px;
     object-fit: cover;
-    background-color: #F5F5F7;
 }
 input[id="cb1"] + label {
     display: inline-block;
@@ -278,11 +266,9 @@ input[id="cb3"] + label {
 input[id="cb3"]:checked + label {
     background-color: #666666;
 }
-
 input[id="cb3"] {
     display: none;
 }
-
 section span{
     text-align: center;
     line-height: 100px;
@@ -291,15 +277,16 @@ section span{
     font-size: 32px;
     background-color: #F5F5F7;
 }
-
 .top-section{
-    height: 5rem;
+    height: 65px;
+    background-color: #F5F5F7;
     margin-top: 20px;
     padding-left: 25px;
     padding-bottom: 20px;
 }
-
-section .top-section p{
-    font-size: 32px;
-    padding: 20px;
+.content-area a{
+    color:#9184D0;
+    text-decoration: none;
+    background-color: #F5F5F7;
+    font-size: 20px;
 }

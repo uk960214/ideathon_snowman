@@ -1,11 +1,36 @@
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 100;
+    src: url(/fonts/NotoSansKr/NotoSansKR-Thin.woff2) format('woff2'),
+    url(/fonts/NotoSansKr/NotoSansKR-Thin.woff) format('woff'),
+    url(/fonts/NotoSansKr/NotoSansKR-Thin.otf) format('opentype');
+}
+
 * {
     border: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+.cafe24 {
+    font-family: Cafe24SsurroundAir, Arial, Helvetica, sans-serif;
+}
+
+.notosans {
+    font-family: Noto Sans KR, Arial, Helvetica, sans-serif;
+}
+
 body {
-    background: url("./images/background/winter.jpg") no-repeat center center/cover;
+    background: linear-gradient(to bottom right,#F1EEFF 30%, #DDEFF9) no-repeat;
+    height: 1024px;
 }
 
 header {
@@ -14,38 +39,54 @@ header {
 }
 
 header{
-    color: white;
-    text-shadow: 3px 3px 5px black;
+    color: #000;
+    text-shadow: 3px 15px 10px #c4c4c4;
 }
 header .time h1 {
-    font-size: 5rem;
+    font-size: 9rem;
 }
 
+header .time p {
+    font-size: 2rem;
+    text-shadow: 3px 10px 10px #c4c4c4;
+}
+
+.message {
+    font-size: 3rem;
+    margin-top: 1.5rem;
+}
+
+
 main {
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin: auto;
 }
 
+.left {
+    padding: 2rem 0;
+}
 .recent {
     background-color: rgba(255, 255, 255, 0.6);
-    padding: 1rem;
+    padding: 2rem 1rem;
     border-radius: 7px;
 }
 
 .recent h3 {
     text-align: center;
+    font-size: 2.5rem;
 }
 .notice {
     display: flex;
-    padding: 0.5rem;
+    padding: 1.1rem 1.3rem;
     align-items: center;
 }
 
 .notice .img-container {
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 .img-container img{
@@ -55,9 +96,9 @@ main {
 }
 
 .notice-content {
-    padding: 0 0.7rem;
+    padding: 0 0.5rem 0 2rem;
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
 }
 
 .my-character {
@@ -66,11 +107,22 @@ main {
     padding: 2rem;
 }
 
+.my-character img {
+    height: 100%;
+}
+
 .friends {
+    padding: 8rem 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
 .friends img {
     height: 10rem; 
+}
+
+.friends a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
