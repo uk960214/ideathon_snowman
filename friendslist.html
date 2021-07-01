@@ -8,30 +8,47 @@
     <link rel="stylesheet" href="friendsliststyle.css">
 </head>
 <body>
-    <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-    <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-    <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-    <section class="content">
+    <nav class="top-nav">
+        <div class="logo-container">
+            <img src="./images/noonylogo.png" alt="logo">
+        </div>
+        <ul class="nav-items notosans">
+            <li><a href="about.html">누니는?</a></li>
+            <li class="current"><a href="friendslist.html">친구목록</a></li>
+            <li><a href="my-feed.html">내 페이지</a></li>
+            <li><a href="settings.html">설정</a></li>
+        </ul>
+        <form class="search-bar notosans">
+            <div class="search-bar-front">
+                <p class="icon">🔍</p>
+            </div>
+            <input type="text" name="search">
+            <button type="submit">검색</button>
+        </form>
+    </nav>
+    <section class="container">
         <aside class="profile">
-            <img src="./images/characters/snowman 2.png" alt="my-snowman" id="my-snowman">
-            <div class="recent-activity">
+            <img src="./images/characters/mynoony.png" alt="my-snowman" id="my-snowman">
+            <div class="user">
+                <h3 class="username cafe24">누니</h3>
+                <p class="days notosans">D + 61</p>
+            </div>
+            <div class="recent-activity notosans">
                 <h2 class="recent-title">
                     최근 내 활동
                 </h2>
                 <div class="hobby">
-                    <img src="./images/icons/bike.png" alt="bike">
-                    <p class="activity">
-                        1건
-                    </p>
+                    <h1 class="hobby-name">자전거 타기</h1>
+                    <p class="activity">1건</p>
                 </div>
                 <div class="hobby">
-                    <img src="./images/icons/books.png" alt="books">
+                    <h1 class="hobby-name">책 읽기</h1>
                     <p class="activity">
                         4건
                     </p>
                 </div>
                 <div class="hobby">
-                    <img src="./images/icons/game.png" alt="game-controller">
+                    <h1 class="hobby-name">사진 찍기</h1>
                     <p class="activity">
                         3건
                     </p>
@@ -40,65 +57,45 @@
         </aside>
         
         <main>
-            <section class="page-title">
-                <h2>친구 목록</h2>
+            <section class="top-section">
+                <p>친구목록</p>
             </section>
 
             <section class="content-area">
-                <a href="friends-postings">
-                    <div class="friend-display">
-                        <img src="./images/characters/snowman 4.png" alt="snowman 4">
-                        <h2 class="level">정국</h2>
-                    </div>
-                </a>
-                <a href="friends-postings">
-                    <div class="friend-display">
-                        <img src="./images/characters/snowman 1.png" alt="snowman 1">
-                        <h2 class="level">남준</h2>
-                    </div>
-                </a>
-                <a href="friends-postings">
-                    <div class="friend-display">
-                        <img src="./images/characters/snowman 5.png" alt="snowman 5">
-                        <h2 class="level">태형</h2>
-                    </div>
-                </a>
-                <a href="friends-postings">
-                    <div class="friend-display">
-                        <img src="./images/characters/snowman 3.png" alt="snowman 4">
-                        <h2 class="level">지민</h2>
-                    </div>
-                </a>
-                <a href="friends-postings">
-                    <div class="friend-display">
-                        <img src="./images/characters/snowman 4.png" alt="snowman 1">
-                        <h2 class="level">진</h2>
-                    </div>
-                </a>
-                <a href="friends-postings">
-                    <div class="friend-display">
-                        <img src="./images/characters/snowman 6.png" alt="snowman 5">
-                        <h2 class="level">윤기</h2>
-                    </div>
-                </a>
-                <a href="friends-postings">
-                    <div class="friend-display">
-                        <img src="./images/characters/snowman 1.png" alt="snowman 4">
-                        <h2 class="level">석진</h2>
-                    </div>
-                </a>
-                <a href="friends-postings">
-                    <div class="friend-display">
-                        <img src="./images/characters/snowman 1.png" alt="snowman 1">
-                        <h2 class="level">호석</h2>
-                    </div>
-                </a>
-                <a href="friends-postings">
-                    <div class="friend-display">
-                        <img src="./images/characters/snowman 5.png" alt="snowman 5">
-                        <h2 class="level">태형</h2>
-                    </div>
-                </a>
+                
+                <section>
+                    <article class="article1">
+                        <img src="./images/friends/friend1.png" alt="">
+                    </article>
+                    <article class="article2">
+                        <img src="./images/friends/friend2.png" alt="">
+                    </article>
+                    <article class="article3">
+                        <img src="./images/friends/friend3.png" alt="">
+                    </article>
+                </section>
+                <section>
+                    <article class="article4">
+                        <img src="./images/friends/friend4.png" alt="">
+                    </article>
+                    <article class="article5">
+                        <img src="./images/friends/friend5.png" alt="">
+                    </article>
+                    <article class="article6">
+                        <img src="./images/friends/friend6.png" alt="">
+                    </article>
+                </section>
+                <section>
+                    <article class="article7">
+                        <img src="./images/friends/friend7.png" alt="">
+                    </article>
+                    <article class="article8">
+                        <img src="./images/friends/friend8.png" alt="">
+                    </article>
+                    <article class="article9">
+                        <img src="./images/friends/friend5.png" alt="">
+                    </article>
+                </section>
             </section>
         </main>
     </section>
