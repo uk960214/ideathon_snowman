@@ -13,7 +13,7 @@ a {
 }
 
 body {
-    background: url("./images/background/glacier.jpg") no-repeat center center/cover;
+    background-color: #e6e6e6;
     height: 100vh;
 }
 
