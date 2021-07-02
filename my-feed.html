@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snowman - My Page</title>
+    <title>Snowman - My Hobby</title>
     <link rel="stylesheet" href="my-feedstyle.css">
 </head>
 <body>
@@ -15,12 +15,12 @@
         <ul class="nav-items notosans">
             <li><a href="about.html">누니는?</a></li>
             <li><a href="friendslist.html">친구목록</a></li>
-            <li><a href="my-feed.html">내 페이지</a></li>
+            <li class="current"><a href="my-feed.html">내 페이지</a></li>
             <li><a href="settings.html">설정</a></li>
         </ul>
         <form class="search-bar notosans">
             <div class="search-bar-front">
-                <p class="icon">🔍</p>
+                <i class="fas fa-search"></i>
             </div>
             <input type="text" name="search">
             <button type="submit">검색</button>
@@ -37,6 +37,7 @@
                 <h2 class="recent-title">
                     최근 내 활동
                 </h2>
+                
                 <div class="hobby">
                     <h1 class="hobby-name">자전거 타기</h1>
                     <p class="activity">1건</p>
@@ -59,14 +60,14 @@
         <main>
             <section class="tab-selector">
                 <ul class="tab notosans">
-                    <li class="current"><a href="#">내 피드</a></li>
-                    <li><a href="#">친구 피드</a></li>
+                    <li class="current"><a href="#">나의 취미</a></li>
+                    <li><a href="#">친구 취미</a></li>
                     <li><a href="my-status.html">내 현황</a></li>
                 </ul>
             </section>
 
             <section class="content-area">
-                <section class="top-section">
+                <section class="top-section notosans">
                     <input type="checkbox" id="cb1">
                     <label for="cb1"></label><span>자전거타기</span>
                     <input type="checkbox" id="cb2">
@@ -74,6 +75,7 @@
                     <input type="checkbox" id="cb3">
                     <label for="cb3"></label><span>사진찍기</span>
                     <a href="./my-feed2.html">모아보기</a>
+                    <a class="create-button" href="create.html">+오늘의 취미 기록하기</a>
                 </section>
                 <section>
                     <article class="article1">
@@ -111,5 +113,6 @@
             </section>
         </main>
     </section>
+    <script src="https://kit.fontawesome.com/f0ec34fd1a.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -47,10 +47,12 @@ body {
     justify-content: space-between;
     width: 85%;
     margin: 4rem auto 0 auto;
+    align-items: center;
 }
 
 .top-nav .logo-container {
     width: 15%;
+    align-items: flex-end;
 }
 
 .top-nav .logo-container img {
@@ -58,7 +60,8 @@ body {
 }
 
 .nav-items {
-    display: flex;  
+    display: flex;
+    align-items: flex-end;
 }
 
 .nav-items li {
@@ -67,13 +70,13 @@ body {
 }
 
 .nav-items li a {
-    font-weight: 600;
+    font-weight: 400;
     color: #404865;
 }
 
 .nav-items .current {
-    font-weight: 800;
-    font-size: 1.6rem;
+    font-weight: 900;
+    font-size: 1.8rem;
 }
 
 .search-bar {
@@ -87,7 +90,7 @@ body {
     border-bottom-left-radius: 15px;
     margin-right: 2px;
 }
-.search-bar .icon {
+.search-bar i {
     padding: 0.5rem 0.5rem;
 }
 
@@ -137,6 +140,7 @@ aside {
 
 .username {
     font-size: 2.5rem;
+    font-weight: bold;
     color: #404865;
 }
 
@@ -162,9 +166,11 @@ aside {
 .recent-activity .hobby {
     display: flex;
     flex-direction: row;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0 0.5rem 1rem;
     align-items: center;
+    justify-content: center;
     padding: 1.2rem 0;
+    text-align: center;
 }
 
 .recent-activity .hobby-name {
@@ -215,91 +221,37 @@ main {
     color: #000000;
 }
 
+.content-title{
+    background-color: #B1BFF2;
+    font-size: 2rem;
+    padding: 0.5rem 2rem 1rem 2rem;
+    font-weight: 600;
+    width: 13rem;
+    text-align: center;
+    box-shadow: 3px -3px 10px rgba(150, 150, 150, 0.7);
+}
+
 .content-area {
     width: 950px;
     height: 850px;
-}
-
-.content-area section{
-    background-color:#F5F5F7;
-    float: left;
-    width: 900px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.content-area article{
-    float: left;
-    width: 250px;
-    height: 250px;
-    margin: 10px;
     background-color: #F5F5F7;
-}
-.content-area img{
-    width:230px;
-    height: 230px;
-    margin: 15px;
-    object-fit: cover;
-    background-color: #F5F5F7;
-}
-input[id="cb1"] + label {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border: 2px solid #bcbcbc;
-    cursor: pointer;
-}
-input[id="cb1"]:checked + label {
-    background-color: #666666;
-}
-input[id="cb1"] {
-    display: none;
-}
-input[id="cb2"] + label {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border: 2px solid #bcbcbc;
-    cursor: pointer;
-}
-input[id="cb2"]:checked + label {
-    background-color: #666666;
-}
-input[id="cb2"] {
-    display: none;
-}
-input[id="cb3"] + label {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border: 2px solid #bcbcbc;
-    cursor: pointer;
-}
-input[id="cb3"]:checked + label {
-    background-color: #666666;
-}
-
-input[id="cb3"] {
-    display: none;
-}
-
-section span{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2rem 1rem;
     text-align: center;
-    line-height: 100px;
-    margin-right: 15px;
-    margin-left: 10px;
-    font-size: 32px;
-    background-color: #F5F5F7;
+    padding-top: 2rem;
 }
 
-.top-section{
-    height: 5rem;
-    margin-top: 20px;
-    padding-left: 25px;
-    padding-bottom: 20px;
+.tags {
+    display: flex;
+    justify-content: center;
 }
 
-section .top-section p{
-    font-size: 32px;
-    padding: 20px;
+.hobby-tag {
+    margin: 0 0.5rem;
+    padding: 0.3rem 0.7rem;
+    background-color: #B1BFF2;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #a6a6a6;
 }

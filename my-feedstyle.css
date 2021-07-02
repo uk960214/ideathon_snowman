@@ -47,10 +47,12 @@ body {
     justify-content: space-between;
     width: 85%;
     margin: 4rem auto 0 auto;
+    align-items: center;
 }
 
 .top-nav .logo-container {
     width: 15%;
+    align-self: flex-end;
 }
 
 .top-nav .logo-container img {
@@ -58,7 +60,8 @@ body {
 }
 
 .nav-items {
-    display: flex;  
+    display: flex;
+    align-items: flex-end;
 }
 
 .nav-items li {
@@ -67,8 +70,13 @@ body {
 }
 
 .nav-items li a {
-    font-weight: 600;
+    font-weight: 400;
     color: #404865;
+}
+
+.nav-items .current {
+    font-weight: 900;
+    font-size: 1.8rem;
 }
 
 .search-bar {
@@ -82,7 +90,7 @@ body {
     border-bottom-left-radius: 15px;
     margin-right: 2px;
 }
-.search-bar .icon {
+.search-bar i {
     padding: 0.5rem 0.5rem;
 }
 
@@ -132,6 +140,7 @@ aside {
 
 .username {
     font-size: 2.5rem;
+    font-weight: bold;
     color: #404865;
 }
 
@@ -157,9 +166,11 @@ aside {
 .recent-activity .hobby {
     display: flex;
     flex-direction: row;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0 0.5rem 1rem;
     align-items: center;
+    justify-content: center;
     padding: 1.2rem 0;
+    text-align: center;
 }
 
 .recent-activity .hobby-name {
@@ -188,7 +199,6 @@ main {
     background-color: #E0E7FF;
     padding: 0.5rem 2rem;
     font-size: 1.5rem;
-    
     box-shadow: 3px -3px 10px rgba(150, 150, 150, 0.7);
     height: 100%;
 }
@@ -232,8 +242,8 @@ main {
 }
 input[id="cb1"] + label {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border: 2px solid #bcbcbc;
     cursor: pointer;
 }
@@ -245,8 +255,8 @@ input[id="cb1"] {
 }
 input[id="cb2"] + label {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border: 2px solid #bcbcbc;
     cursor: pointer;
 }
@@ -258,8 +268,8 @@ input[id="cb2"] {
 }
 input[id="cb3"] + label {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border: 2px solid #bcbcbc;
     cursor: pointer;
 }
@@ -274,13 +284,12 @@ section span{
     line-height: 100px;
     margin-right: 15px;
     margin-left: 10px;
-    font-size: 32px;
+    font-size: 1.7rem;
     background-color: #F5F5F7;
 }
 .top-section{
     height: 65px;
     background-color: #F5F5F7;
-    margin-top: 20px;
     padding-left: 25px;
     padding-bottom: 20px;
 }
@@ -289,4 +298,15 @@ section span{
     text-decoration: none;
     background-color: #F5F5F7;
     font-size: 20px;
+}
+
+.content-area .create-button {
+    background-color: #B1BFF2;
+    padding: 0.5rem 1rem;
+    color: #000000;
+    float: right;
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #a6a6a6;
 }
